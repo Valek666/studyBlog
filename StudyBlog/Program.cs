@@ -29,7 +29,7 @@ namespace StudyBlog
             catch (Exception e)
             {
                 var logger = services.GetRequiredService<ILogger<Program>>();
-                logger.LogError(e, "Возникло исключение при инициализации ролей");
+                logger.LogError(e, "Возникло большое исключение при инициализации ролей");
             }
             host.Run();
         }
